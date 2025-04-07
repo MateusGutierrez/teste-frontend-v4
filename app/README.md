@@ -14,6 +14,11 @@ VITE_ORS_API_KEY: Chave de acesso à API
 VITE_ORS_URL: URL da API de cálculo de rotas
 https://api.openrouteservice.org/v2/directions/driving-car/geojson
 
+## Sobre o desenvolvimento
+
+> O desenvolvimento inicial deste desafio foi realizado em um repositório separado, exatamente aqui [https://github.com/MateusGutierrez/frontend-aiko-test]. Para poder fazer o deploy da aplicação durante o desenvolvimento.
+> Em seguida, ralizei o fork do repositório oficial, criei a branch nomeada conforme solicitado e integrei todo o código com **seu histórico de commits preservado**, garantindo a rastreabilidade do desenvolvimento.
+
 ## Como Rodar o Projeto
 
 1. Certifique-se de ter o Node.js instalado (recomendado: v18+).
@@ -39,7 +44,7 @@ O projeto está hospedado em: [https://frontend-aiko-test.vercel.app/](https://f
 
 ## Video
 
-Apresentação: [https://frontend-aiko-test.vercel.app/](https://frontend-aiko-test.vercel.app/)
+Apresentação: [video](https://www.loom.com/share/e9af1e62e60f4cdd82a87b6c7cfa860f?sid=5736433c-de88-420f-a754-f230d5695772)
 
 
 ## Tecnologias Utilizadas
