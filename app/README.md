@@ -1,54 +1,57 @@
-# React + TypeScript + Vite
+# Desafio - Desenvolvedor Front-end
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introdução
 
-Currently, two official plugins are available:
+Este repositório contém a implementação do teste de Front-end: [https://github.com/aikodigital/teste-frontend-v4](https://github.com/aikodigital/teste-frontend-v4).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para executar o projeto, é necessário criar um arquivo .env com as seguintes variáveis:
 
-## Expanding the ESLint configuration
+VITE_JSON_URL: URL do repositório de teste
+https://raw.githubusercontent.com/aikodigital/teste-frontend-v4/master
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+VITE_ORS_API_KEY: Chave de acesso à API
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname
-    }
-  }
-});
-```
+VITE_ORS_URL: URL da API de cálculo de rotas
+https://api.openrouteservice.org/v2/directions/driving-car/geojson
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Como Rodar o Projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
+1. Certifique-se de ter o Node.js instalado (recomendado: v18+).
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules
-  }
-});
-```
+2. Clone o repositório e acesse a pasta do frontend:
+   ```sh
+   https://github.com/MateusGutierrez/frontend-aiko-test
+   cd app
+   ```
+3. Instale as dependências:
+   ```sh
+   npm install
+   ```
+4. Execute o projeto:
+   ```sh
+   npm run dev
+   ```
+5. Acesse no navegador: [http://localhost:5173](http://localhost:5173)
+
+## Deploy
+
+O projeto está hospedado em: [https://frontend-aiko-test.vercel.app/](https://frontend-aiko-test.vercel.app/)
+
+## Video
+
+Apresentação: [https://frontend-aiko-test.vercel.app/](https://frontend-aiko-test.vercel.app/)
+
+
+## Tecnologias Utilizadas
+- React com Vite
+- Tailwind CSS
+- Zustand (Gerenciamento de Estado)
+- React-Leaflet (API de Mapa)
+- React Router (Navegação)
+- ShadCN (Componentes UI)
+
+## Contato
+Caso tenha dúvidas ou sugestões, entre em contato:
+
+- **Email:** mateusgutierrez9@gmail.com
+- **GitHub:** [https://github.com/MateusGutierrez](https://github.com/MateusGutierrez)
